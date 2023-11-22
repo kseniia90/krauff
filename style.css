@@ -392,7 +392,6 @@ main {
   max-width: 1290px;
   margin: 0 auto;
   padding: 0 15px;
-  border: 1px solid red;
 }
 
 .margin-bottom {
@@ -516,7 +515,6 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 10px;
 }
 .header-container .header-left__contacts h5 {
   font-weight: 500;
@@ -566,7 +564,6 @@ main {
 
 .light-background {
   background-color: #F5F5F5;
-  padding-bottom: 100px;
 }
 
 .banner {
@@ -633,6 +630,7 @@ main {
   align-items: center;
   flex-direction: row;
   gap: 20px;
+  margin-bottom: 100px;
 }
 .advantages__img-block {
   display: grid;
@@ -896,7 +894,7 @@ main {
   gap: 80px;
 }
 .banner_2__content {
-  width: 619px;
+  width: 590px;
   padding: 66px 0px 19px;
 }
 .banner_2__content .title {
@@ -966,49 +964,119 @@ main {
      object-position: left;
 }
 
-.footer {
-  flex: 0 0 auto;
-}
-.footer-main {
+.question_form-block {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: row;
-  gap: 50px;
-  padding-bottom: 15px;
+  gap: 30px;
+  position: relative;
 }
-@media (max-width: 992px) {
-  .footer-main {
-    gap: 20px;
-  }
+.question_form-block .left {
+  max-width: 590px;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 40px; /* 160% */
+  letter-spacing: 2.5px;
 }
-@media (max-width: 768px) {
-  .footer-main {
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+.question_form-block .left .title {
+  margin-bottom: 22px;
 }
-@media (max-width: 768px) {
-  .footer-main .footer-main__side.left .footer-download-app__block {
-    display: none;
-  }
+.question_form-block .left img {
+  position: absolute;
+  left: 0;
+  bottom: -70px;
 }
-.footer-main .footer-main__side.left .footer-download-app {
+.question_form-block .form-block {
+  width: 620px;
+  padding-bottom: 140px;
+}
+.question_form-block .question__form {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  gap: 5px;
+  gap: 21px;
+  padding: 40px 60px 50px;
+  width: 580px;
+  background: #FFF;
+  box-shadow: 40px 40px #CC6666, 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
 }
-.footer-main .footer-main__side.right {
-  text-align: right;
+.question_form-block .question__form input, .question_form-block .question__form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 25px;
+  border: 3px solid #F5F5F5;
+  background: #FFF;
 }
-@media (max-width: 768px) {
-  .footer-main .footer-main__side.right {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-direction: row;
-    gap: 40px;
-  }
+.question_form-block .question__form input:active, .question_form-block .question__form input:focus, .question_form-block .question__form textarea:active, .question_form-block .question__form textarea:focus {
+  outline: none;
+}
+.question_form-block .question__form input::-moz-placeholder, .question_form-block .question__form textarea::-moz-placeholder {
+  color: #55565A;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 40px; /* 235.294% */
+  letter-spacing: 1.7px;
+}
+.question_form-block .question__form input::placeholder, .question_form-block .question__form textarea::placeholder {
+  color: #55565A;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 40px; /* 235.294% */
+  letter-spacing: 1.7px;
+}
+.question_form-block .question__form button {
+  cursor: pointer;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.question_form-block .question__form button:hover {
+  background-color: #CC6666;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+.footer-container {
+  padding: 79px 0 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: #FFF;
+}
+.footer-container .footer-right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.footer-container .footer-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 186px;
+  font-size: 18px;
+}
+.footer-container .footer-left__contacts {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 78px;
+}
+.footer-container .footer-left__contacts__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.footer-container .footer-left__contacts h5 {
+  font-weight: 500;
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
