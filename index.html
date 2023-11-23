@@ -31,10 +31,10 @@
                      </div>
                      <div class="header-left__icons">
                          <a href="tel:+ 380675969908" class="header_phone"><span class="icon-phone"></span></a>
-                         <a href="#" class="header_shopping_cart">
+                         <div class="header_shopping_cart open_shopping_cart_popup">
                              <span class="icon-cart"></span>
                              <p class="shopping_cart__counter">0</p>
-                         </a>
+                         </div>
                      </div>
                     </div>
                  </div>
@@ -59,10 +59,12 @@
                     </div>
                     <div class="advantages">
                         <div class="advantages__img-block">
-                            <img src="./img/advantages_1.png" alt="img">
-                            <div class="column"> 
-                                <img src="./img/advantages_2.png" alt="img">
-                                <img src="./img/advantages_3.png" alt="img">
+                            <div class="advantages__img-block__container">
+                                <img src="./img/advantages_1.png" alt="img">
+                                <div class="column"> 
+                                    <img src="./img/advantages_2.png" alt="img">
+                                    <img src="./img/advantages_3.png" alt="img">
+                                </div>
                             </div>
                             <ul>
                                 <li id="advantages__delivery">
@@ -79,7 +81,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <h class="title">Наші переваги</h2>
+                        <h2 class="title">Наші переваги</h2>
 
                     </div>
                 </div>
@@ -195,7 +197,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__result__item">
+                    <div class="products__result__item hideContent">
                         <div class="product__card">
                             <a class="product__card__img" href="#">
                                 <img src="./img/product_5.png" alt="img">
@@ -219,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__result__item">
+                    <div class="products__result__item hideContent">
                         <div class="product__card">
                             <a class="product__card__img" href="#">
                                 <img src="./img/product_6.png" alt="img">
@@ -244,7 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__result__item">
+                    <div class="products__result__item hideContent">
                         <div class="product__card">
                             <a class="product__card__img" href="#">
                                 <img src="./img/product_7.png" alt="img">
@@ -268,7 +270,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__result__item">
+                    <div class="products__result__item hideContent">
                         <div class="product__card">
                             <a class="product__card__img" href="#">
                                 <img src="./img/product_8.png" alt="img">
@@ -293,7 +295,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__result__item">
+                    <div class="products__result__item hideContent">
                         <div class="product__card">
                             <a class="product__card__img" href="#">
                                 <img src="./img/product_1.png" alt="img">
@@ -317,7 +319,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__result__item">
+                    <div class="products__result__item hideContent">
                         <div class="product__card">
                             <a class="product__card__img" href="#">
                                 <img src="./img/product_2.png" alt="img">
@@ -342,7 +344,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__result__item">
+                    <div class="products__result__item hideContent">
                         <div class="product__card">
                             <a class="product__card__img" href="#">
                                 <img src="./img/product_3.png" alt="img">
@@ -366,7 +368,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__result__item">
+                    <div class="products__result__item hideContent">
                         <div class="product__card">
                             <a class="product__card__img" href="#">
                                 <img src="./img/product_4.png" alt="img">
@@ -391,6 +393,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="products-show-more custom-button">
+                    <span>Всi товари</span>
                 </div>
             </section>
             <section class="light-background">
@@ -449,6 +454,95 @@
                 </div>
             </section>
         </main>
+        <div class="shopping_cart_popup">
+            <div class="shopping_cart_popup-dialog">
+                <div class="shopping_cart_popup-content">
+                    <div class="shopping_cart_popup-header">
+                        <h2 class="shopping_cart_popup-title">Ваша корзина</h2>
+                    </div>
+                    <div class="shopping_cart_popup-body">
+                        <ul>
+                            <li>
+                                <div class="product__card">
+                                    <a class="product__card__img" href="#">
+                                        <img src="./img/product_1.png" alt="img">
+                                        <div class="product__card__present">
+                                            <img class="present present_1" src="./img/product_card_present_1.png" alt="img">
+                                        </div>
+                                    </a>
+                                    <div class="product__card__info">
+                                        <a href="#" class="product__card__info__name">Сковорода Stilvoll із литого алюмінію діам.20см + Подарунок - кришка Krauff</a>
+                                        <p class="product__card__lable">Артикул: 55-333-083</p>
+                                        <div class="shopping_cart_counter">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product__card__info__content">
+                                            <div class="product__card__info__price">
+                                                <p class="old-price">1 390 грн<span class="old-price__sale">-50%</span></p>
+                                                <p>695 грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="product__card">
+                                    <a class="product__card__img" href="#">
+                                        <img src="./img/product_1.png" alt="img">
+                                        <div class="product__card__present">
+                                            <img class="present present_4_1" src="./img/product_card_present_4_1.png" alt="img">
+                                            <img class="present present_4_2" src="./img/product_card_present_4_2.png" alt="img">
+                                        </div>
+                                    </a>
+                                    <div class="product__card__info">
+                                        <a href="#" class="product__card__info__name">Сковорода Stilvoll із литого алюмінію діам.20см + Подарунок - кришка Krauff</a>
+                                        <p class="product__card__lable">Артикул: 55-333-083</p>
+                                        <div class="shopping_cart_counter">
+                                            <span class="minus">-</span>
+                                            <input type="text" value="1"/>
+                                            <span class="plus">+</span>
+                                        </div>
+                                        <div class="product__card__info__content">
+                                            <div class="product__card__info__price">
+                                                <p class="old-price">1 390 грн<span class="old-price__sale">-50%</span></p>
+                                                <p>695 грн</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="order-result">
+                            <span>До оплати:</span>
+                            <span class="order-price">1 350 грн.</span>
+                        </div>
+                        <p class="custom-button order-buy-button open_order_form_popup">Оформити</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order_form_popup">
+            <div class="order_form_popup-dialog">
+                <div class="order_form_popup-content">
+                    <div class="order_form_popup-header">
+                        <img class="close_popup" src="./img/close_popup.svg" alt="x">
+                        <h2 class="order_form_popup-title">Оформити замовлення</h2>
+                    </div>
+                    <div class="order_form_popup-body">
+                        <form class="order__form">
+                            <input type="text" name="user_last_name" placeholder="Прізвище">
+                            <input type="text" name="user_name" placeholder="Ім'я">
+                            <input type="phone" name="user_phone" placeholder="+ 38 (_ _ _) _ _ _ - _ _ - _ _">
+                            <input type="text" name="user_payment" placeholder="Накладна плата">
+                            <button class="custom-button">Відправити</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer class="footer">
             <div class="container">
                 <div class="footer-container">
