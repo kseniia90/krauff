@@ -23,6 +23,11 @@ if(document.querySelector('.shopping_cart_popup') !== null) {
     document.body.style.overflow = 'visible';
     document.querySelector('.shopping_cart_popup').classList.remove('active');
   });
+  document.querySelector('.close__cart_popup').addEventListener('click', function (e) {
+    document.body.style.overflow = 'visible';
+    document.querySelector('.shopping_cart_popup').classList.remove('active');
+  });
+
 }
 
 // order_form popup open/close on click
